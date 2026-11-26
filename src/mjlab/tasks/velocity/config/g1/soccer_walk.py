@@ -5,6 +5,8 @@ from .rl_cfg import unitree_g1_ppo_runner_cfg
 
 def g1_soccer_walk_env_cfg(play: bool=False):
   cfg = unitree_g1_flat_env_cfg(play=play)
+  if not play:
+    cfg.scene.num_envs = 2048
   cfg.commands["twist"].rel_standing_envs = 0.2
   cfg.rewards["foot_slip"].weight = -0.5
   cfg.rewards["air_time"].weight = 0.5
