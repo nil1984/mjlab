@@ -20,8 +20,8 @@ def g1_soccer_walk_rl_cfg():
 
 register_mjlab_task(
     task_id = "Mjlab-SoccerWalk-Flat-Unitree-G1",
-    env_cfg = g1_soccer_walk_env_cfg,
+    env_cfg = g1_soccer_walk_env_cfg(),
     play_env_cfg= g1_soccer_walk_env_cfg(play=True),
-    rl_cfg = g1_soccer_walk_rl_cfg,
+    rl_cfg = g1_soccer_walk_rl_cfg(),
     runner_cls = VelocityOnPolicyRunner,
 )
