@@ -23,5 +23,3 @@ register_mjlab_task(
   runner_cls=VelocityOnPolicyRunner,
 )
 from . import soccer_walk  # noqa: F401
-from . import soccer_walk  # noqa: F401
-from . import soccer_walk  # noqa: F401
