@@ -22,3 +22,6 @@ register_mjlab_task(
   rl_cfg=unitree_g1_ppo_runner_cfg(),
   runner_cls=VelocityOnPolicyRunner,
 )
+from . import soccer_walk  # noqa: F401
+from . import soccer_walk  # noqa: F401
+from . import soccer_walk  # noqa: F401
