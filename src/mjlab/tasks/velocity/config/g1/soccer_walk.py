@@ -18,6 +18,7 @@ def g1_soccer_walk_env_cfg(play: bool = False):
 def g1_soccer_walk_rl_cfg():
     cfg = unitree_g1_ppo_runner_cfg()
     cfg.experiment_name = "g1_soccer_walk"
+    cfg.logger = "tensorboard"
     cfg.max_iterations = 5000
     return cfg
 
